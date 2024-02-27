@@ -1,6 +1,6 @@
 # ws_base
 
-This is a template for a web service using .NET Core 8 and C#.
+This is a template for a web service using .NET Core 8 and C#. 😎
 
 ## Quick Navigation
 
@@ -21,6 +21,17 @@ This is a template for a web service using .NET Core 8 and C#.
 2. Open the solution in Visual Studio Code
 3. Run the application
 
+To create a new service, simple execute in linux/macos the command:
+```bash
+./new_service.sh <service_name>
+``` 
+for example
+```bash
+./new_service.sh DateTimeService
+```
+
+**NOTE:** Probably you must give the execution permission to the script with the command `chmod +x new_service.sh`
+
 ## Prerequisites
 
 - .NET Core 8
@@ -28,7 +39,7 @@ This is a template for a web service using .NET Core 8 and C#.
 
 ## Application setup
 
-In the `src/eu.andrewdev.ws_base` folder you will find these folders:
+In the `src/it.naturasrl.ws_base` folder you will find these folders:
 
 - `common`: Contains common classes, utilities, global variables, etc.
 - `endpoint`: Contains the API controllers with all the endpoints;
@@ -95,9 +106,9 @@ The base class for every endpoint. It contains the base path, the api version, t
 This class implements the interface `IEndpoint`
 
 ```csharp
-using eu.andrewdev.ws_base.interfaces;
+using it.naturasrl.ws_base.interfaces;
 
-namespace eu.andrewdev.ws_base.common;
+namespace it.naturasrl.ws_base.common;
 
 public abstract class Endpoint : IEndpoint
 {
@@ -394,5 +405,5 @@ In this example the `ApiKeyCheck` middleware is added to the application (only i
 
 ## Ending
 
-Now you are ready to create new amazing application 🎉 
+Now you are ready to create new amazing application 😎
 Have fun!
