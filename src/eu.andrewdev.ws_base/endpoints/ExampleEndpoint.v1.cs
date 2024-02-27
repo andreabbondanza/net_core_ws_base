@@ -2,9 +2,6 @@
 using eu.andrewdev.ws_base.models;
 using eu.andrewdev.ws_base.services;
 using Microsoft.AspNetCore.Mvc;
-using QuestPDF.Fluent;
-using QuestPDF.Helpers;
-using QuestPDF.Infrastructure;
 using Endpoint = eu.andrewdev.ws_base.common.Endpoint;
 
 public class ExampleEndpointV1(string apiVersion, string endpointPath)
